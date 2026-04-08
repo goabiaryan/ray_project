@@ -1,7 +1,5 @@
 # Distributed LLM playground — runbook
 
-Work in this repository root (the directory that contains `docker-compose.yml` and `serve_config.yaml`):
-
 ```bash
 cd /path/to/ray_project
 ```
