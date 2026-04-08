@@ -81,7 +81,7 @@ def build_llamacpp_application():
     validate_llamacpp_env()
     settings = llamacpp_settings()
 
-    fastapi_app = FastAPI(title="distributed-llm-playground (llama.cpp)", version="0.1")
+    fastapi_app = FastAPI(title="ray-project LLM playground (llama.cpp)", version="0.1")
     n_replicas = max(1, int(os.environ.get("LLAMACPP_NUM_REPLICAS", "1")))
 
     @serve.deployment(name="llamacpp_openai", num_replicas=n_replicas)

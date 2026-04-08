@@ -20,7 +20,7 @@ echo "Querying GitHub API for latest release (suffix=$SUFFIX) ..." >&2
 JSON="$(
   curl -fsSL \
     -H 'Accept: application/vnd.github+json' \
-    -H 'User-Agent: distributed-llm-playground-fetch' \
+    -H 'User-Agent: ray-project-llm-fetch' \
     'https://api.github.com/repos/ggml-org/llama.cpp/releases/latest'
 )" || {
   echo "curl failed (network or GitHub). Try again or download manually from:" >&2

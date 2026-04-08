@@ -1,9 +1,9 @@
 # Distributed LLM playground — runbook
 
-Work in this directory for every path below (the folder that contains `docker-compose.yml` and `serve_config.yaml`):
+Work in this repository root (the directory that contains `docker-compose.yml` and `serve_config.yaml`):
 
 ```bash
-cd /path/to/distributed-llm-playground
+cd /path/to/ray_project
 ```
 
 ---
@@ -16,7 +16,7 @@ modal setup
 modal deploy modal_app.py
 ```
 
-Use the URL printed after `modal deploy` (ends in `.modal.run`) as the API base; HTTP routes are under `/v1/...`. In the examples below, set `MODAL_BASE_URL` to that URL (no trailing slash). Default OpenAI `model` name: `tinyllama-chat`.
+The Modal app name is `ray-project-vllm` (see `modal_app.py`). Use the URL printed after `modal deploy` (ends in `.modal.run`) as the API base; HTTP routes are under `/v1/...`. In the examples below, set `MODAL_BASE_URL` to that URL (no trailing slash). Default OpenAI `model` name: `tinyllama-chat`.
 
 Optional before `modal deploy`:
 

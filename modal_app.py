@@ -40,7 +40,7 @@ vllm_image = (
 hf_cache_vol = modal.Volume.from_name("playground-hf-cache", create_if_missing=True)
 vllm_cache_vol = modal.Volume.from_name("playground-vllm-cache", create_if_missing=True)
 
-app = modal.App("distributed-llm-playground-vllm")
+app = modal.App("ray-project-vllm")
 
 _USE_HF_SECRET = os.environ.get("MODAL_USE_HF_SECRET", "0").lower() in ("1", "true", "yes")
 _MODAL_SECRETS = (
